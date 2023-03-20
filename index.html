@@ -1,134 +1,425 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>某人 - Homepage</title>
-<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
-<link rel="Shortcut Icon" href="图标.ico" type="image/x-icon" />
- 
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+  <meta charset="utf-8">
+  <title>首页</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
- 
+
 <body>
-<!-- Header content -->
-<header>
-  <div class="profileLogo"> 
-    <!-- Profile logo. Add a img tag in place of <span>. -->
-    <p class="logoPlaceholder"><!-- <img src="logoImage.png" alt="sample logo"> --><span>个人主页&nbsp;</span></p>
+  <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="107" valign="middle"><img src="images/0.jpg" width="90" height="90"></td>
+      <td width="793" valign="middle">
+        <h1>原神</h1>
+      </td>
+    </tr>
+    <tr>
+      <td height="30" colspan="2" valign="middle">
+        <hr>
+      </td>
+    </tr>
+  </table>
+  <div id="container">
+    <!-- 轮播图 -->
+    <ul id="img_ul">
+      <!-- 与之前相比，前后多了两张图片 -->
+      <li><img src="images/01.jpg"></li>
+      <li><img src="images/0.jpg"></li>
+      <li><img src="images/02.jpg"></li>
+      <li><img src="images/03.jpg"></li>
+      <li><img src="images/5.png"></li>
+      <li><img src="images/6.jpg"></li>
+    </ul>
+    <!-- 底部按钮 -->
+    <ul id="litCir_ul"></ul>
+    <!-- 左右切换按钮 -->
+    <div id="buttons">
+      <span id="left">&lt;</span>
+      <span id="right">&gt;</span>
+    </div>
   </div>
-  <div class="profilePhoto"> 
-    <!-- Profile photo --> 
-    <img src="证件照.jpg" width="200"> </div>
-  <!-- Identity details -->
-  <section class="profileHeader">
-    <h1>&nbsp;</h1>
-    <h1>姓名</h1>
-<h3>文字</h3>
-    <hr>
-    <p>文字</p>
-    <p>QQ：&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-     <p>Email：&nbsp;</p>
-	</section>
-  <!-- Links to Social network accounts -->
-  <aside class="socialNetworkNavBar">
-    <div class="socialNetworkNav"> 
-      <!-- Add a Anchor tag with nested img tag here -->      </div>
-    <div class="socialNetworkNav"> 
-      <!-- Add a Anchor tag with nested img tag here -->      </div>
-    <div class="socialNetworkNav"> 
-      <!-- Add a Anchor tag with nested img tag here -->      </div>
-    <div class="socialNetworkNav"> 
-      <!-- Add a Anchor tag with nested img tag here -->      </div>
-  </aside>
-</header>
-<!-- content -->
-<section class="mainContent"> 
-  <!-- Contact details -->
- </section>
-      <section class="section2">
-        <h2 class="sectionTitle" style="font-size: 20px">教育经历&nbsp;</h2>
-        <hr class="sectionTitleRule">
-        <hr class="sectionTitleRule2">
-        <div class="section2Content">
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2021.9-至今 :</span> 硕士</p>
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2017.9-2021.6 :</span> 本科</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2014.9-2017.6 :</span> 高中</p>
+
+  <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="15%" height="30"><a href="index.html" id="Moveout" class="Moveout" onmouseover="Moveoutsover()"
+          onmouseout="MoveoutSout()">首页</a>
+      </td>
+      <td width="16%"><a href="wy2.html" id="Moveout1" class="Moveout" onmouseover="Moveoutsover()"
+        onmouseout="MoveoutSout()">星空</a></td>
+      <td width="17%"><a href="wy3.html" id="Moveout2" class="Moveout" onmouseover="Moveoutsover()"
+        onmouseout="MoveoutSout()">向日葵</a></td>
+      <td width="20%"><a href="wy4.html" id="Moveout3" class="Moveout" onmouseover="Moveoutsover()"
+        onmouseout="MoveoutSout()">松柏树</a></td>
+      <td width="16%"><a href="wy5.html" id="Moveout4" class="Moveout" onmouseover="Moveoutsover()"
+        onmouseout="MoveoutSout()">午睡</a></td>
+      <td width="16%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="15%" height="30"><a href="index.html" class="contenter" id="content" style="display: none;">首页</a>
+      </td>
+      <td width="16%"><a href="wy2.html" class="contenter" id="content1" style="display: none;">星空</a></td>
+      <td width="17%"><a href="wy3.html" class="contenter" id="content2" style="display: none;">向日葵</a></td>
+      <td width="20%"><a href="wy4.html" class="contenter" id="content3" style="display: none;">松柏树</a></td>
+      <td width="16%"><a href="wy5.html" class="contenter" id="content4" style="display: none;">午睡</a></td>
+      <td width="16%">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="40" colspan="2">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td width="627">
+        <h2 align="center">梵高介绍</h2>
+        <p>文森特·梵高（Vincent van Gogh，1853年3月30日—1890年7月29日），荷兰后印象派画家。代表作有《星月夜》、自画像系列、向日葵系列等。</p>
+        <p>
+          梵高出生于1853年3月30日荷兰乡村津德尔特的一个新教牧师家庭，早年的他做过职员和商行经纪人，还当过矿区的传教士最后他投身于绘画。他早期画风写实，受到荷兰传统绘画及法国写实主义画派的影响。1886年，他来到巴黎，结识印象派和新印象派画家，并接触到日本浮世绘的作品，视野的扩展使其画风巨变，他的画，开始由早期的沉闷、昏暗，而变得简洁、明亮和色彩强烈。1888年，来到法国南部小镇阿尔，已经摆脱印象派及新印象派的影响，走到了与之背道而驰的境地。同年与高更交往，但由于二人性格的冲突和观念的分歧，合作很快便告失败。此后，梵高的疯病（有人记载是“癫痫病”）时常发作，但神志清醒时他仍然坚持作画，1890年7月，他在精神错乱中开枪自杀，年仅37岁。
+        </p>
+      </td>
+      <td width="273">
+        <div>
+          <p>
+            <span>用户名:</span><input type="text" placeholder="请输入用户名">
+          </p>
+          <p>
+            <span>密 码:</span><input type="text" placeholder="请输入密码">
+          </p>
+          <p>
+            <button>登录</button>
+          </p>
         </div>
-      </section>
-  <!-- Previous experience details -->
-  <section class="section2">
-    <h2 class="sectionTitle" style="font-size: 20px">科研经历&nbsp;</h2>
-    <hr class="sectionTitleRule">
-    <hr class="sectionTitleRule2">
-    <div class="section2Content">
-      <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2022.5-至今 :</span> 文字</p>
-      <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑">&nbsp;
-      </p>
-	</div>
-   </section>
-      <section class="section2">
-        <h2 class="sectionTitle" style="font-size: 20px">研究方向&nbsp;</h2>
-        <hr class="sectionTitleRule">
-        <hr class="sectionTitleRule2">
-        <div class="section2Content">
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑">文字</p>
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑">&nbsp;</p>
-        </div>
-      </section>
-	
-	</section>
-      <section class="section2">
-        <h2 class="sectionTitle" style="font-size: 20px">发表文章&nbsp;</h2>
-        <hr class="sectionTitleRule">
-        <hr class="sectionTitleRule2">
-        <div class="section2Content">
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑">&nbsp;</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑">&nbsp;</p>
-        </div>
-      </section>
-	
-<section class="section2">
-        <h2 class="sectionTitle" style="font-size: 20px">奖学金&nbsp;</h2>
-        <hr class="sectionTitleRule">
-        <hr class="sectionTitleRule2">
-        <div class="section2Content">
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2020.10&2021.12 :</span> 文字</p>
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2020.10 :</span> 文字</p>
-  </div>
-      </section>
-    </section>
-      <section class="section2">
-        <h2 class="sectionTitle" style="font-size: 20px">学生工作&所获荣誉&nbsp;</h2>
-        <hr class="sectionTitleRule">
-        <hr class="sectionTitleRule2">
-        <div class="section2Content">
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2021.9-2022.7 :</span> 文字</p>
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2020.9-2021.7 :</span> 文字</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span>2020.9-至今 :</span> 文字</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑">&nbsp;</p>
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span> 2022.3 :</span> 文字</p>
-          <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span> 2021.5 & 2022.5 :</span> 文字</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span> 2021.5 & 2022.5 :</span> 文字</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span> 2021.5 & 2022.5 :</span> 文字</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span> 2021.12 :</span> 文字</p>
-		  <p style="font-size: 17px;color: darkgray;font-family: 微软雅黑"><span> 2020.10 :</span> 文字</p>
-        </div>
-      </section>
-	
-    <!-- Replicate the above Div block to add more title and company details --> 
- 
-<footer>
-  <hr>
-	 <p style="font-size: 15px;color: darkgray;font-family: 微软雅黑"> <span id="context">&nbsp; &nbsp; &nbsp; Related Links： 
-              <a href="链接" target="_blank" id="node">USTC</a> | 
-              <a href="链接" target="_blank" id="node">School of ESS of USTC</a> | 
-              <a href="链接" target="_blank" id="node">Laboratory</a> | 
-         </span></p>
-	 <p style="font-size: 15px;color: darkgray;font-family: 微软雅黑"> &nbsp; &nbsp; &nbsp; 最近更新：2023.3.20
-  <p class="footerDisclaimer">2022&nbsp; Copyrights - <span>All Rights Reserved</span></p>
- 
-</footer>
+      </td>
+    </tr>
+  </table>
+  <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="40">&nbsp;</td>
+    </tr>
+
+  </table>
 </body>
+<script>
+  var img_ul = document.getElementById("img_ul"); // 轮播图
+  var litCir_ul = document.getElementById("litCir_ul"); // 圆点按钮 ul
+  var buttons = document.getElementById("buttons"); // 左右切换按钮
+
+  var cLis = litCir_ul.children; // 圆点按钮
+  var len = img_ul.children.length - 2; // 真实图片数，图片列表有6张，真实图片数只有4张
+  var width = 500; //每张图片的宽度
+  var picN = 1; //当前显示的图片下标为1，展示第一张图片
+  // 根据图片数添加小圆点
+  for (let i = 0; i < len; ++i) {
+    var a_li = document.createElement("li");
+    a_li.className = 'quiet';
+    litCir_ul.appendChild(a_li);
+  }
+  // 默认把第一个圆点按钮设置 active
+  litCir_ul.children[0].className = 'active';
+  // 触碰小圆点切换图片
+  for (var i = 0; i < len; i++) {
+    // 给每个小圆点绑定 mouseover 事件
+    cLis[i].onmouseover = function () {
+      // 停止轮播
+      clearInterval(img_ul.timer);
+      for (var j = 0; j < len; j++) {
+        cLis[j].className = "quiet";
+      }
+      this.className = "active";
+      picN = i + 1; // 切换的图片下标
+      img_ul.style.left = (picN * width * -1) + 'px'; // 切换图片
+    }
+
+    // 开启轮播
+    cLis[i].onmouseout = function () {
+      Roll();
+    }
+  }
+  function setActiveSpot() {
+    for (var j = 0; j < len; j++) {
+      cLis[j].className = "quiet";
+    }
+
+    // 这里是 picN - 1 是因为下标picN的图片对应着下标为picN - 1的圆点
+    cLis[picN - 1].classList = "active";
+  }
+  function Roll() {
+    clearInterval(img_ul.timer);
+    img_ul.timer = setInterval(() => {
+      ++picN;
+      img_ul.style.transition = "all .5s";
+      img_ul.style.left = (picN * width * -1) + 'px';
+      if (picN === len + 1) {
+        picN = 1;
+        setActiveSpot();
+        setTimeout(() => {
+          img_ul.style.transitionProperty = "none"; // 取消动画
+          img_ul.style.left = -width + 'px'; // 改变 left 值
+        }, 500)
+      } else {
+        setActiveSpot();
+      }
+    }, 2000)
+  }
+  Roll();
+  // 停止轮播
+  buttons.children[0].onmouseover = function () {
+    clearInterval(img_ul.timer);
+  }
+
+  buttons.children[1].onmouseover = function () {
+    clearInterval(img_ul.timer);
+  }
+
+  // 开启轮播
+  buttons.children[0].onmouseout = function () {
+    Roll();
+  }
+
+  buttons.children[1].onmouseout = function () {
+    Roll();
+  }
+  // 节流函数
+  function throttle(fn, time) {
+    let canRun = true;
+    // 闭包
+    return function () {
+      if (!canRun) return;
+      canRun = false;
+      setTimeout(() => {
+        fn.apply(this, arguments);
+        canRun = true;
+      }, time);
+    }
+  }
+
+  // 上一张按钮
+  buttons.children[0].onclick = throttle(function () {
+    --picN;
+    img_ul.style.transition = "all .5s";
+    img_ul.style.left = (picN * width * -1) + 'px';
+    if (picN === 0) {
+      picN = len;
+      setActiveSpot();
+      setTimeout(() => {
+        img_ul.style.transitionProperty = "none";
+        img_ul.style.left = (picN * width * -1) + 'px';
+      }, 500);
+    } else {
+      setActiveSpot();
+    }
+  }, 500)
+
+  // 下一站按钮
+  buttons.children[1].onclick = throttle(function () {
+    ++picN;
+    img_ul.style.transition = "all .5s";
+    img_ul.style.left = (picN * width * -1) + 'px';
+    if (picN === len + 1) {
+      picN = 1;
+      setActiveSpot();
+      setTimeout(() => {
+        img_ul.style.transitionProperty = "none";
+        img_ul.style.left = 0;
+      }, 500);
+    } else {
+      setActiveSpot();
+    }
+  }, 500)
+  var Moveout = document.getElementById("Moveout");
+  var content = document.getElementById("content");
+  //鼠标移入显示
+  Moveout.onmouseover = function () {
+    content.style.display = "block";
+  }
+  function Moveoutsover() {
+    content.style.display = "block";
+  }
+  //鼠标移出隐藏
+  Moveout.onmouseout = function () {
+    content.style.display = "none";
+  }
+  function MoveoutSout() {
+    content.style.display = "none";
+  }
+  var Moveout1 = document.getElementById("Moveout1");
+  var content1 = document.getElementById("content1");
+  //鼠标移入显示
+  Moveout1.onmouseover = function () {
+    content1.style.display = "block";
+  }
+  function Moveoutsover() {
+    content1.style.display = "block";
+  }
+  //鼠标移出隐藏
+  Moveout1.onmouseout = function () {
+    content1.style.display = "none";
+  }
+  function MoveoutSout() {
+    content1.style.display = "none";
+  }
+  var Moveout2 = document.getElementById("Moveout2");
+  var content2 = document.getElementById("content2");
+  //鼠标移入显示
+  Moveout2.onmouseover = function () {
+    content2.style.display = "block";
+  }
+  function Moveoutsover() {
+    content2.style.display = "block";
+  }
+  //鼠标移出隐藏
+  Moveout2.onmouseout = function () {
+    content2.style.display = "none";
+  }
+  function MoveoutSout() {
+    content2.style.display = "none";
+  }
+  var Moveout3 = document.getElementById("Moveout3");
+  var content3 = document.getElementById("content3");
+  //鼠标移入显示
+  Moveout3.onmouseover = function () {
+    content3.style.display = "block";
+  }
+  function Moveoutsover() {
+    content3.style.display = "block";
+  }
+  //鼠标移出隐藏
+  Moveout3.onmouseout = function () {
+    content3.style.display = "none";
+  }
+  function MoveoutSout() {
+    content3.style.display = "none";
+  }
+  var Moveout4 = document.getElementById("Moveout4");
+  var content4 = document.getElementById("content4");
+  //鼠标移入显示
+  Moveout4.onmouseover = function () {
+    content4.style.display = "block";
+  }
+  function Moveoutsover() {
+    content4.style.display = "block";
+  }
+  //鼠标移出隐藏
+  Moveout4.onmouseout = function () {
+    content4.style.display = "none";
+  }
+  function MoveoutSout() {
+    content4.style.display = "none";
+  }
+</script>
+<style>
+  /* 包裹轮播图的容器需要使用 overflow: hidden 来隐藏超出的图片 */
+  #container {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-left: 10;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #img_ul {
+    width: 3000px;
+    /* 轮播图宽度为 图片数 * 图片宽 */
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    /* 图片列表的默认 left 值 */
+    transition: all .5s;
+  }
+
+  #img_ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 400px;
+  }
+
+  #img_ul li img {
+    width: 500px;
+    height: 400px;
+  }
+
+  #litCir_ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  #litCir_ul li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* 圆点按钮生效样式 */
+  li.active {
+    background-color: white;
+  }
+
+  li.quiet {
+    background-color: #1e90ff;
+  }
+
+  #buttons {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  /* hover 轮播图则显示左右切换按按钮 */
+  #container:hover #buttons {
+    display: block;
+  }
+
+  #buttons span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Simsun;
+    font-size: 30px;
+    border: 1px solid #fff;
+    opacity: 0.3;
+    cursor: pointer;
+    color: #fff;
+    background: black;
+  }
+
+  #left {
+    left: 5px;
+  }
+
+  #right {
+    left: 100%;
+    margin-left: -45px;
+  }
+</style>
+
 </html>
